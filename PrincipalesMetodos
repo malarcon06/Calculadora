@@ -1,0 +1,73 @@
+Nombres:  -Kianush Atighi-Moghaddam Solís
+	       -Miguel Alarcón Muñoz
+	       -Tomás Muñoz Vivanco
+
+Métodos principales
+Nombre: initiateCalculator
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: Monta la calculadora, mostrando el menú y pidiendo una opción (notar que la opción devuelve en formato char). Su función es repetir todo el proceso mientras la opción no esté entre 1 y 6 (representados por 49 y 54 en el código ASCII) o si la opción es igual a 'Y' (89 en ASCII).
+Si la opción es 'N' (78 en ASCII) sale del método.
+Si se obtiene una opción válida se llama al método operateWithOption() para hacer la operación correspondiente y se vuelve a armar la calculadora llamándose a sí misma (initiateCalculator()).
+
+Nombre: showMenu
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: muestra el menú que contiene todas las operaciones, junto con las indicaciones para salir de la aplicación.
+
+Nombre: getOption
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: obtiene la opción referente al menú, es decir, la operación que elige el usuario.
+
+Nombre: operateWithOption
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: según la opción elegida por el usuario, se opera según corresponda, eligiendo el método adecuado para la operación.
+
+
+
+
+
+Nombre: askForNumbers
+Valor de retorno: double []
+Tipos de parámetros de entrada: boolean
+Proceso: Método que pide al usuario dos números en forma de String, comprueba que cada String sea un número con el método isNumeric(), y en el caso de que el parámetro isDivision es verdadero, comprueba también que el número B (dividendo) sea distinto de 0.
+
+Nombre: isNumeric
+Valor de retorno: boolean
+Tipos de parámetros de entrada: String
+Proceso: Método que comprueba si una variable String está solo compuesta por números, verificando que cada uno de los caracteres de la variable sea un número.
+
+Nombre:  sumNumbers
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: Pide dos números a la función askForNumbers, muestra en pantalla la suma los números entregados.
+
+Nombre: substractNumbers
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: Pide dos números a la función askForNumbers, muestra en pantalla la resta los números entregados.
+
+Nombre: multiplyNumbers
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: Pide dos números a la función askForNumbers, muestra en pantalla la multiplicación los números entregados.
+
+Nombre: divideNumbers
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: Pide dos números a la función askForNumbers indicando que la operación es división (boolean isDivision es verdadera), muestra en pantalla la división los números entregados.
+
+
+
+
+Nombre: greaterNumber
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: Pide dos números a la función askForNumbers, indica cual es el mayor de esos números.
+
+Nombre: powerNumber
+Valor de retorno: void
+Tipos de parámetros de entrada: sin parámetros
+Proceso: Pide dos números a la función askForNumbers, eleva el número A al número B.
